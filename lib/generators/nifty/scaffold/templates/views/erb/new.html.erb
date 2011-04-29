@@ -1,7 +1,7 @@
-<%% title "New <%= singular_name.titleize %>" %>
+<h1>Nuevo</h1>
 
 <%= render_form %>
 
 <%- if action? :index -%>
-<p><%%= link_to "Back to List", <%= items_path %> %></p>
+<p><%%= link_to "Índice", <%= items_path %>, :class => "button negative" %></p>
 <%- end -%>

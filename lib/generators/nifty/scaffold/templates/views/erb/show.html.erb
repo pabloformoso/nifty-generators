@@ -1,4 +1,4 @@
-<%% title "<%= singular_name.titleize %>" %>
+<h1><%= singular_name.titleize %>" %></h1>
 
 <%- for attribute in model_attributes -%>
 <p>
@@ -9,12 +9,15 @@
 
 <p>
 <%- if action? :edit -%>
-  <%%= link_to "Edit", <%= item_path :action => :edit, :instance_variable => true %> %> |
+  <%%= link_to "Editar", <%= item_path :action => :edit, :instance_variable => true %>, :class => "button" %> 
 <%- end -%>
 <%- if action? :destroy -%>
-  <%%= link_to "Destroy", <%= item_path :instance_variable => true %>, :confirm => 'Are you sure?', :method => :delete %> |
+  <%%= link_to "Borrar", <%= item_path :instance_variable => true %>, :confirm => 'Está seguro?', :method => :delete, :class => "button negative" %> 
 <%- end -%>
 <%- if action? :index -%>
-  <%%= link_to "View All", <%= items_path %> %>
+  <%%= link_to "Índice", <%= items_path %>, :class => "button negative" %>
+<%- end -%>
+<%- if action? :new -%>
+  <%%= link_to "<span class='icon plus'></span>Agegar".html_safe, <%= item_path :action => :new %>, :class => "button" %>
 <%- end -%>
 </p>
