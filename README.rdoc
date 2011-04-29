@@ -1,5 +1,7 @@
 = Nifty Generators
 
+This is a fork from the original project from Ryan Bates. I customized to fits Softwhisper SL. To see github buttons style generated you must include the CSS3 Buttons on http://css3buttons.michaelhenriksen.dk/ 
+
 A collection of useful Rails generator scripts for scaffolding, layout files, authentication, and more.
 
 
